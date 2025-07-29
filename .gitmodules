@@ -1,0 +1,3 @@
+[submodule "evaluation/LiveRepoReflection"]
+	path = evaluation/LiveRepoReflection
+	url = https://github.com/LiveRepoReflection/LiveRepoReflection-Execution.git
