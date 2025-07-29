@@ -35,6 +35,17 @@ This repository provides a suite of tools and datasets for advancing research in
 
 Our framework is built on an automated pipeline that ensures the continuous generation of high-quality, relevant, and challenging coding problems. This process, illustrated in our paper, prevents benchmark overfitting and data contamination.
 
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="./assets/pipeline.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;"></div>
+</center>
+
 **The key stages are:**
 
 1.  **Seed Data Collection**: We gather code from diverse public sources (GitHub, Hugging Face, etc.) across six key languages.
@@ -101,6 +112,28 @@ The benchmark runs in two parallel modes for each model, providing a comprehensi
 The results from both modes are automatically collected and summarized.
 
 #### Running the `LiveRepoReflection` Benchmark
+
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="./assets/intro.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;"></div>
+</center>
+
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="./assets/format.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;"></div>
+</center>
 
 1.  **Configure the evaluation**: Open `evaluation/run/LiveRepoReflection/run_test.sh` and customize the following key parameters:
 
