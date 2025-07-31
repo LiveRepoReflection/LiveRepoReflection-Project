@@ -6,6 +6,12 @@
     <a href="https://github.com/LiveRepoReflection/LiveRepoReflection-Project">🐳 Evaluation Environment / Benchmark / Pipeline (<-- You are here) </a> 
 </p>
 <p align="left">
+    <a href="https://LiveRepoReflection.github.io/index.html">🏆 Leaderboard </a>
+</p>
+<p align="left">
+    <a href="https://arxiv.org/abs/2507.09866">📄 Paper </a>
+</p>
+<p align="left">
     <a href="https://github.com/LiveRepoReflection/LiveRepoReflection">📊 Benchmark Data </a>
 </p>
 <p align="left">
