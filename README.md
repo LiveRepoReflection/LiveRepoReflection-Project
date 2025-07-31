@@ -9,6 +9,9 @@
     <a href="https://LiveRepoReflection.github.io/index.html">🏆 Leaderboard </a>
 </p>
 <p align="left">
+    <a href="https://LiveRepoReflection.github.io/home.html">🏠 Project Page </a>
+</p>
+<p align="left">
     <a href="https://arxiv.org/abs/2507.09866">📄 Paper </a>
 </p>
 <p align="left">
