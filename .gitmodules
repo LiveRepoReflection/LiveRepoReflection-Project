@@ -1,3 +1,7 @@
 [submodule "evaluation/LiveRepoReflection"]
 	path = evaluation/LiveRepoReflection
 	url = https://github.com/LiveRepoReflection/LiveRepoReflection-Execution.git
+
+[submodule "evaluation/proxy"]
+	path = evaluation/proxy
+	url = https://github.com/zwpride/OpenAI-Forward.git
