@@ -212,7 +212,12 @@ First, split the large generated dataset into smaller, manageable chunks for par
 
 ```bash
 # Define paths for clarity
-INPUT_FILE="pipelines/generate/dataset/answer_unit_test/YOUR_RUN_ID/all.jsonl"SPLIT_FILE="pipelines/check/dataset/run_unit_test/YOUR_RUN_ID/splits.json"python pipelines/check/split_indices.py \  --input_path ${INPUT_FILE} \  --output_file ${SPLIT_FILE} \  --average_lines 100 # Adjust based on desired chunk size
+INPUT_FILE="pipelines/generate/dataset/answer_unit_test/YOUR_RUN_ID/all.jsonl"
+SPLIT_FILE="pipelines/check/dataset/run_unit_test/YOUR_RUN_ID/splits.json"
+python pipelines/check/split_indices.py \
+  --input_path ${INPUT_FILE} \
+  --output_file ${SPLIT_FILE} \
+  --average_lines 100 # Adjust based on desired chunk size
 ```
 
 **5b: Run Unit Tests in Parallel**
@@ -221,7 +226,11 @@ Next, run the unit tests on each split. This step is typically executed on a clu
 
 ```bash
 # This is a conceptual command for a single job
-python pipelines/check/run_unit_test_index.py \  --input_path ${INPUT_FILE} \  --output_path ./pipelines/check/dataset/run_unit_test/YOUR_RUN_ID/split_1/ \  --split_id 1 \  --splits_json_path ${SPLIT_FILE}
+python pipelines/check/run_unit_test_index.py \
+  --input_path ${INPUT_FILE} \
+  --output_path ./pipelines/check/dataset/run_unit_test/YOUR_RUN_ID/split_1/ \
+  --split_id 1 \
+  --splits_json_path ${SPLIT_FILE}
 ```
 
 **5c: Merge Parallel Results**
@@ -229,14 +238,17 @@ python pipelines/check/run_unit_test_index.py \  --input_path ${INPUT_FILE} \  -
 Once all parallel jobs are complete, merge their individual output files into a single result file.
 
 ```bash
-python pipelines/check/merge_results_thread.py \  --batch_dir ./pipelines/check/dataset/run_unit_test/YOUR_RUN_ID/
+python pipelines/check/merge_results_thread.py \
+  --batch_dir ./pipelines/check/dataset/run_unit_test/YOUR_RUN_ID/
 ```
 
 **5d: Parse and Finalize Results**
 
 Finally, parse the merged raw test output to extract structured data (pass/fail counts, errors, etc.) and create the final, clean dataset.
 ```bash
-python pipelines/check/parser.py \  --input_path ./pipelines/check/dataset/run_unit_test/YOUR_RUN_ID/merged_all.jsonl \  --output_path ./pipelines/check/dataset/final_parsed_results/
+python pipelines/check/parser.py \
+  --input_path ./pipelines/check/dataset/run_unit_test/YOUR_RUN_ID/merged_all.jsonl \
+  --output_path ./pipelines/check/dataset/final_parsed_results/
 ```
 
 
