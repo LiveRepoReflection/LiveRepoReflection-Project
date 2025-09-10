@@ -28,6 +28,10 @@ Welcome to the official repository for **LiveRepoReflection**. This project, det
 
 While traditional benchmarks focus on generating standalone functions, `LiveRepoReflection` evaluates LLMs on more realistic software development tasks that require navigating and editing complex, interdependent codebases.
 
+## News
+
+🎉🎉🎉 Our paper has been accepted by EMNLP 2025 (Findings).
+
 ## Core Components
 
 This repository provides a suite of tools and datasets for advancing research in code intelligence:
